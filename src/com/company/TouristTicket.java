@@ -10,6 +10,9 @@ public class TouristTicket extends  Ticket{
                          float price, boolean cancelled) {
         super(pnr, from, t0, flight, departureDateTime, arrivalDateTime, passenger, seatNo, price, cancelled);
     }
+    public TouristTicket() {
+        super();
+    }
 
 
     public String getHotelAddress() {

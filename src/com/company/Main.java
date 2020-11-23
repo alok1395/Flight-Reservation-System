@@ -11,6 +11,21 @@ public class Main {
         System.out.println(passenger.getContactDetails());
         System.out.println(passenger.getAddressDetails());
         System.out.println(flight.getFlightDetails());
+        Ticket ticket=new Ticket("AI-67854", "Delhi", "Mumbai", flight, "1100" ,
+                "0200", passenger, "6B", 5678, false);
+        printTicketDetails(ticket);
 
+        TouristTicket touristTicket= new TouristTicket();
+        printTicketDetails(touristTicket);
+
+        RegularTicket regularTicket= new RegularTicket();
+        printTicketDetails(regularTicket);
+
+
+    }
+
+    public static void printTicketDetails(Ticket ticket) {
+        //Ticket newTicket = new Ticket();
+        System.out.println(ticket.getPnr());
     }
 }

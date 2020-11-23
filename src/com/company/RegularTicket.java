@@ -16,6 +16,9 @@ public class RegularTicket extends  Ticket{
         super(pnr, from, t0, flight, departureDateTime, arrivalDateTime, passenger, seatNo, price, cancelled);
     }
 
+    public RegularTicket() {
+        super();
+    }
 
     public String getSpecialServicesByFlight(){
         return " ";
